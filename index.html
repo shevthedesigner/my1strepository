@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio Data Recording App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bio Data Recording App</h1>
+        <form id="bioForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="occupation">Occupation:</label>
+            <input type="text" id="occupation" name="occupation" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+        
+        <h2>Stored Bio Data</h2>
+        <div id="bioData"></div>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
